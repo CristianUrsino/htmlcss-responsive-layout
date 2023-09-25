@@ -1,11 +1,11 @@
 /*generals*/
 :root {
-	--color-secondary-color: #0084FD;
-	--color-dark-color: #333333;
-	--color-light-color: #FFFFFF;
-	--color-primary-color: #9792E4;
+	--color-secondary: #0084FD;
+	--color-dark: #333333;
+	--color-light: #FFFFFF;
+	--color-primary: #9792E4;
 	--color-bg-card: #B5DDFF;
-	--color-contrast-color: #FCC060;
+	--color-contrast: #FCC060;
 	--color-text: #424242;
 }
 *{
@@ -16,7 +16,90 @@
 }
 body{
     font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
 }
 .debug{
-    border: 1px solid black;
+    border: 1px solid red;
+}
+img{
+    width: 100%;
+}
+/******************************************UTILITIES************************************/
+/* backgrounds */
+.bg-color-primary{
+    background-color: var(--color-primary);
+}
+.bg-color-secondary{
+    background-color: var(--color-secondary);
+}
+.bg-card{
+    background-color: var(--color-bg-card);
+}
+/*text*/
+.text-white{
+    color: #FFFFFF;
+}
+.text-color-secondary{
+    color: var(--color-secondary);
+}
+.text-color-primary{
+    color: var(--color-primary);
+}
+.text-bold{
+    font-weight: bold;/*useless?*/
+}
+/* containers*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* flex*/
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+    align-content: center;
+}
+/* spacing*/
+.pd-y-10{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pd-y-20{
+    padding-top: 30px;
+    padding-bottom:30px;
+}
+.pd-x-10{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pd-x-20{
+    padding-left: 30px;
+    padding-right:30px;
+}
+.mg-y-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mg-y-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mg-x-10{/*useless?*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mg-x-20{/*useless?*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/***********************************FOOTER********************************************/
+footer{
+    background-color: var(--color-dark);
 }
