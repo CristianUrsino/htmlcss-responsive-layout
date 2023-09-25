@@ -24,6 +24,10 @@ body{
 img{
     width: 100%;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 /******************************************UTILITIES************************************/
 /* backgrounds */
 .bg-color-primary{
@@ -48,10 +52,21 @@ img{
 .text-bold{
     font-weight: bold;/*useless?*/
 }
+.text-center{
+    text-align: center;
+}
 /* containers*/
 .container{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-576{
+    width: 100%;
+    max-width: 576px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin:0 auto;
 }
 /* flex*/
 .d-flex{
@@ -86,20 +101,38 @@ img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.mg-y-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 .mg-x-10{/*useless?*/
     margin-left: 10px;
     margin-right: 10px;
 }
-.mg-x-20{/*useless?*/
-    margin-left: 20px;
-    margin-right: 20px;
+.mb-20{
+    margin-bottom: 20px;
 }
-
+/* buttons*/
+.btn{
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 1.2em;
+}
+/**********************************HEADER*******************************************/
+.fa-bars{
+    font-size: 1.5em;
+}
+nav .btn{
+    padding: 5px 10px;
+    color: black;
+    background-color: #fff;
+}
+#hamburger-text{
+    display: none;
+}
 /***********************************FOOTER********************************************/
 footer{
     background-color: var(--color-dark);
+}
+footer a{
+    text-decoration: underline;
+    color: var(--color-primary);
 }
