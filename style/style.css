@@ -188,11 +188,29 @@ nav .btn{
 figure.circle{
 width: 250px;
 height: 250px;
+overflow: hidden;
 }
-img.circle{
-    width: 100%;
+figure.circle img{
     height: 100%;
     object-fit: cover;
+}
+#about-us figure{
+    position: relative;
+    margin: unset;
+    display: block;
+    overflow:visible;
+}
+#about-us figure.circle img{
+    border-radius: 50%;
+}
+#about-us figure i{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+#about-us a.btn{
+    padding: 0 7px;
+    font-size: 1em;
 }
 /***********************************FOOTER********************************************/
 footer{
