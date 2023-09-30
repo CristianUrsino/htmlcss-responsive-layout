@@ -21,6 +21,9 @@ body{
 .debug{
     border: 1px solid red;
 }
+figure{
+    max-width: 400px;
+}
 img{
     width: 100%;
 }
@@ -84,6 +87,9 @@ h2{
 }
 .text-center{
     text-align: center;
+}
+.sub-text{
+    color: lightgray;
 }
 /* containers*/
 .container{
@@ -211,6 +217,18 @@ figure.circle img{
 #about-us a.btn{
     padding: 0 7px;
     font-size: 1em;
+}
+#call-to-action>div>*{
+    margin: 25px 0;
+}
+#call-to-action h2{
+    color: #fdc15f;
+    font-size: 3em;
+}
+#call-to-action .btn{
+    padding: 13px 70px;
+    background-color: #fff;
+    color: var(--color-primary);
 }
 /***********************************FOOTER********************************************/
 footer{
