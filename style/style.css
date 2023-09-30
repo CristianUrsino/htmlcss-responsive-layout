@@ -238,3 +238,39 @@ footer a{
     text-decoration: underline;
     color: var(--color-primary);
 }
+/* ******************************LAYOUT TABLET************************** */
+@media screen and (min-width:768px) {
+    .gap{
+        gap: 20px;
+    }
+    #intro .card:first-of-type{
+        width: calc(100% / 3 * 2 - 20px);
+    }
+    #intro .card-img{
+        margin: 0;
+    }
+    #intro .card{
+        width:calc(100% / 3 - 20px);
+    }
+    #planning figure{
+        max-width: none;
+    }
+    #testimonials figure{
+        margin: 0px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #testimonials .card>div{
+        display: inline-block;
+        width: calc(100% - 300px);
+    }
+    #benefits .card{
+        width: calc(50% - 20px);
+    }
+    #about-us>div div:first-child{
+        width: calc(100% - 300px);
+    }
+    #about-us>div div{
+        width: 300px;
+    }
+}
