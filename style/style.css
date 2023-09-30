@@ -200,6 +200,9 @@ figure.circle img{
     height: 100%;
     object-fit: cover;
 }
+#planning figure{
+    max-width: none;
+}
 #about-us figure{
     position: relative;
     margin: unset;
@@ -252,9 +255,6 @@ footer a{
     #intro .card{
         width:calc(100% / 3 - 20px);
     }
-    #planning figure{
-        max-width: none;
-    }
     #testimonials figure{
         margin: 0px;
         display: inline-block;
@@ -272,5 +272,35 @@ footer a{
     }
     #about-us>div div{
         width: 300px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    #intro .card{
+        width: calc(100% / 3 -20px);
+    }
+    #intro .card:first-of-type{
+        width: calc(100% / 3 -20px);
+    }
+    #intro .card.d-flex{
+        gap: 20px;
+    }
+    #intro .card.d-flex>*{
+        width: calc(50% - 20px);
+    }
+    #intro .card.d-flex figure{
+        align-self: end;
+    }
+    #planning>div>div{
+        width: 50%;
+    }
+    #planning>div>div:last-child{
+        align-self: end;
+    }
+    #benefits .card{
+        width: calc(100% / 3 - 20px);
     }
 }
